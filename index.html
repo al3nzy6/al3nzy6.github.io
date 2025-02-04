@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مزود خدمة البريد الإلكتروني</title>
+  <!-- ربط Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* تخصيص لون النافبار ليتناسب مع اللون الأخضر السعودي */
+    .navbar-saudi-green {
+      background-color: #006c35; /* يمكنك تغيير اللون إذا رغبت */
+    }
+  </style>
+</head>
+<body>
+  <!-- نافبار -->
+  <nav class="navbar navbar-expand-lg navbar-saudi-green">
+    <a class="navbar-brand text-white" href="#">خدمة البريد</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل التنقل">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#">الرئيسية <span class="sr-only">(الحالي)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">الميزات</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">التسعير</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">اتصل بنا</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- قسم السلايدر (Carousel) -->
+  <div id="homepageCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#homepageCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#homepageCarousel" data-slide-to="1"></li>
+      <li data-target="#homepageCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <!-- الشريحة الأولى -->
+      <div class="carousel-item active">
+        <img src="path/to/your-image1.jpg" class="d-block w-100" alt="الشريحة الأولى">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>عنوان الشريحة الأولى</h5>
+          <p>نص توضيحي للشريحة الأولى.</p>
+          <a href="#" class="btn btn-primary">زر الشريحة الأولى</a>
+        </div>
+      </div>
+      <!-- الشريحة الثانية -->
+      <div class="carousel-item">
+        <img src="path/to/your-image2.jpg" class="d-block w-100" alt="الشريحة الثانية">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>عنوان الشريحة الثانية</h5>
+          <p>نص توضيحي للشريحة الثانية.</p>
+          <a href="#" class="btn btn-primary">زر الشريحة الثانية</a>
+        </div>
+      </div>
+      <!-- الشريحة الثالثة -->
+      <div class="carousel-item">
+        <img src="path/to/your-image3.jpg" class="d-block w-100" alt="الشريحة الثالثة">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>عنوان الشريحة الثالثة</h5>
+          <p>نص توضيحي للشريحة الثالثة.</p>
+          <a href="#" class="btn btn-primary">زر الشريحة الثالثة</a>
+        </div>
+      </div>
+    </div>
+    <!-- أزرار التنقل للسلايدر -->
+    <a class="carousel-control-prev" href="#homepageCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">السابق</span>
+    </a>
+    <a class="carousel-control-next" href="#homepageCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">التالي</span>
+    </a>
+  </div>
+
+  <!-- قسم إضافي لعرض الاقتراحات أو المزايا -->
+  <section class="container my-5">
+    <div class="row">
+      <div class="col text-center">
+        <h2>لماذا تختارنا؟</h2>
+        <p>
+          نحن نوفر خدمات بريد إلكتروني آمنة وموثوقة مع دعم فني على مدار الساعة، واجهة سهلة الاستخدام، وأدوات متطورة لإدارة بريدك الإلكتروني.
+        </p>
+        <a href="#" class="btn btn-success">تعرف على المزيد</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ربط ملفات JS الخاصة بBootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
